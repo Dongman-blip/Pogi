@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="header">
+            <img src="pics/logo2.png" alt="logo">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    <i class='bx bx-x' onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-menu' onclick="openmenu()"></i>
+            </nav>
+        </div>
+        
+        <div id="banner">
+            <div class="left">
+                <div class="header-text">
+                    <p>Frontend Developer</p>
+                    <h1>Yo, I'm <span>John Talite</span> <br>from Philippines</h1>
+                    <p>a 2nd Year BSIT <span class="typing-span" style="color: rgb(53, 163, 152);"></span></p>
+                    <a href="pics/Talite_CV.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="home-sci">
+                    <a href="https://www.facebook.com/j.hinri02"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://twitter.com/Revjohnyyy"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.instagram.com/jan_hinri/"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="right">
+                <img src="pics/qt.png" alt="me">
+            </div>
+        </div>
+    
+        <!-- ABOUT PAGE -->
+        <div id="about">
+            <div class="container">
+              <div class="row">
+                <div class="about-col-1">
+                  <img src="pics/hatdog.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About <span>Me</span></h1>
+                    <p>I'm a budding IT student at the University of Southeastern Philippines, 
+                      passionate about delving into the world of technology. Through my studies, 
+                      I aim to master various aspects of IT, from programming to network infrastructure, 
+                      and pave my path towards a fulfilling career in this field. With a keen interest 
+                      in emerging technologies and a commitment to continuous learning, I strive to stay 
+                      ahead of industry trends and contribute meaningfully to innovative projects.
+                    </p>
+    
+                    <div class="tab-title">
+                      <p class="tab-links active link" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                      <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+    
+                    <div class="tab-contents active-tab" id="skills-content">
+                      <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Photo Editing</span><br>Image enhancement and manipulation</li>
+                        <li><span>Video Editing</span><br>Manipulating and refining video content</li>
+                      </ul>
+                    </div>
+    
+                    <div class="tab-contents" id="experience-content">
+                      <ul>
+                        <li><span>2022 - Current</span><br>IT Student at University of Southeastern Philippines</li>
+                        <li><span>2020 - 2021</span><br>Project Leader at CPJR company</li>
+                        <li><span>2018 - 2019</span><br>Backend Developer at St. Laura (MCPI) </li>
+                      </ul>
+                    </div>
+    
+                    <div class="tab-contents" id="education-content">
+                      <ul>
+                        <li><span>2022 - Current</span><br>University of Southeastern Philippines</li>
+                        <li><span>2021</span><br>Maryknoll College of Panabo Inc.</li>
+                        <li><span>2016</span><br>Maryknoll College of Panabo Inc.</li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    
+    
+        <!-- Services Page -->
+    
+        <div id="services">
+          <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+              <div class="service-item">
+                <img src="pics/uiux.png" class="service-image" alt="UI/UX Design">
+                <div class="content">
+                  <i class='bx bx-code-alt'></i>
+                  <h2>UI/UX DESIGN</h2>
+                  <p>Elevate your brand's digital presence with our expert UI/UX design. 
+                    We craft intuitive, visually stunning interfaces 
+                    that engage users and drive business growth.</p>
+                  <a href="https://www.youtube.com/watch?v=zHAa-m16NGk">Learn more</a>
+                </div>
+              </div>
+        
+              <div class="service-item">
+                <img src="pics/photo.png" class="service-image" alt="Photo Editing">
+                <div class="content">
+                  <i class='bx bx-crop'></i>
+                  <h2>PHOTO EDITING</h2>
+                  <p>Unleash your photo's potential with our professional editing service. 
+                    Expert editors enhance your images with precision and creativity. 
+                    Elevate your photography now.</p>
+                  <a href="https://www.youtube.com/watch?v=KR7L2oSRlwY">Learn more</a>
+                </div>
+              </div>
+        
+              <div class="service-item">
+                <img src="pics/video.png" class="service-image" alt="Video Editing">
+                <div class="content">
+                  <i class='bx bx-video'></i>
+                  <h2>VIDEO EDITING</h2>
+                  <p>Upgrade your videos with our expert editing service. 
+                    Transform raw footage into captivating content, tailored to your needs. 
+                    Elevate your video game now.</p>
+                  <a href="https://www.youtube.com/watch?v=oC3gXr1s_aU">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+    
+    <!-- Portfolio Page -->
+    
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title"><span>My  </span>Projects</h1>
+        <div class="proj-list">
+          <button id="prev-btn">&lt;</button>
+          <div class="proj-slider">
+            <div class="proj">
+              <img src="pics/Proj1.png" alt="Project 1">
+              <div class="proj-hover">UI/UX Design</div> 
+            </div>
+            <div class="proj">
+              <img src="pics/proj2.png" alt="Project 2">
+              <div class="proj-hover">Video Editing</div> 
+            </div>
+            <div class="proj">
+              <img src="pics/proj3.png" alt="Project 3">
+              <div class="proj-hover">Photo Editing</div>
+            </div>
+            <div class="proj">
+              <img src="pics/proj4.png" alt="Project 4">
+              <div class="proj-hover">Photo Editing</div>
+            </div>
+            <div class="proj">
+              <img src="pics/proj5.png" alt="Project 5">
+              <div class="proj-hover">Photo Editing</div> 
+            </div>
+          </div>
+          <button id="next-btn">&gt;</button>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <!-- CONTACT PAGE -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <div class="center-text">
+              <h1 class="sub-title">Contact <span>Me</span></h1>
+              <p><i class='bx bxs-contact' style='color: turquoise'></i>boybawang141@gmail.com</p>
+              <p><i class='bx bxs-phone' style='color: turquoise'></i>09096273961</p>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Full Name" required>
+              <input type="email" name="Email" placeholder="Email Address" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+              <span id="msg"></span>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/j.hinri02"><i class="bx bxl-facebook"></i></a>
+                <a href="https://twitter.com/Revjohnyyy"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/jan_hinri/"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    
+  <div class="copyright">
+    <p>&copy; 2024 JT. All Rights Reserved. | Designed and Developed by John Talite | <a href="https://policies.google.com/privacy?hl=en-US">Privacy Policy</a> | <a href="https://policies.google.com/terms?hl=en-US">Terms of Service</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Script for the portfolio page -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+  const projects = document.querySelectorAll(".proj");
+  let currentIndex = 0;
+
+  // Function to show the current image
+  function showImage(index) {
+    projects.forEach((project, i) => {
+      if (i === index) {
+        project.classList.add("active");
+      } else {
+        project.classList.remove("active");
+      }
+    });
+  }
+
+  // Initial display of the first image
+  showImage(currentIndex);
+
+  nextBtn.addEventListener("click", function() {
+    currentIndex = (currentIndex + 1) % projects.length;
+    showImage(currentIndex);
+  });
+
+  prevBtn.addEventListener("click", function() {
+    currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+    showImage(currentIndex);
+  });
+});
+
+</script>
+
+
+<!-- Script for the about page -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            // Loop through tab links
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+
+            // Loop through tab contents
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
+            }
+
+            // Add active class to clicked tab link
+            for (var i = 0; i < tablinks.length; i++) {
+                if (tablinks[i].textContent.toLowerCase() === tabname) {
+                    tablinks[i].classList.add("active-link");
+                    break;
+                }
+            }
+            
+            // Add active class to corresponding tab content
+            document.getElementById(tabname + '-content').classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+
+    </script>
+
+
+<!-- script for the typing effects -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const texts = ["Student", "Athlete"];
+      let index = 0;
+      let currentText = "";
+      let letterIndex = 0;
+  
+      function typeText() {
+          if (index === texts.length) {
+              index = 0;
+          }
+          currentText = texts[index];
+          letterIndex = 0;
+          type();
+          index++;
+      }
+  
+      function type() {
+          if (letterIndex < currentText.length) {
+              document.querySelector('.typing-span').textContent += currentText.charAt(letterIndex);
+              letterIndex++;
+              setTimeout(type, 200);
+          } else {
+              setTimeout(erase, 1000);
+          }
+      }
+  
+      function erase() {
+          if (letterIndex > 0) {
+              let text = currentText.substring(0, letterIndex - 1);
+              document.querySelector('.typing-span').textContent = text;
+              letterIndex--;
+              setTimeout(erase, 100); 
+          } else {
+              setTimeout(typeText, 500); 
+          }
+      }
+  
+      typeText();
+  });
+  </script>
+
+<!-- Script for the contact form -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby-PAFw9wnNCC7tJwNvS1l_bSL1x1KtlYSwZlWA2JTi5j1SSqAd-9HAW3b7D8bVAo8L/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfuly!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+  
+</script>
+
+
+<!-- Script for the header -->
+<script>
+    window.addEventListener('scroll', function() {
+    var header = document.querySelector('.header');
+    var scrollPosition = window.pageYOffset;
+
+    if (scrollPosition > 0) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+<script>
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+  
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+
+
+</body>
+</html>
